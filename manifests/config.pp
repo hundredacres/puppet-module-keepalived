@@ -1,3 +1,12 @@
+# == Class: keepalived::config
+#
+# This class manages the keepalived configuration
+#
+# == Usage
+#
+# This class is not intended to be used directly.
+# It's automatically included by keepalived
+#
 class keepalived::config (
   $notification_email_to,
   $notification_email_from,

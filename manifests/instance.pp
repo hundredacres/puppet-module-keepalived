@@ -1,3 +1,19 @@
+# == Define: keepalived::instance
+#
+# This class manages keepalived instances
+#
+# == Variables
+#
+# == Usage
+#
+# == Examples:
+#   keepalived::instance { '50':
+#     interface   => 'eth0',
+#     virtual_ips => [ '192.168.200.17 dev eth0' ],
+#     state       => hiera( "keepalived_50_state" ),
+#     priority    => hiera( "keepalived_50_priority" ),
+#   }
+#
 define keepalived::instance (
   $interface,
   $virtual_ips,

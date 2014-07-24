@@ -1,3 +1,5 @@
+# == Define: keepalived::vrrp_script
+#
 define keepalived::vrrp_script (
   $name_is_process = false,
   $script   = undef,
